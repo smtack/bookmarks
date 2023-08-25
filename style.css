@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  padding-bottom: 25px;
+  background-color: #2C3E50;
+}
+
+.header h1 {
+  font-size: 38px;
+  font-weight: 100;
+  padding: 50px;
+}
+
+.header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav ul li {
+  display: inline-block;
+  padding: 40px;
+}
+
+.nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav ul li a:hover {
+  background-color: #EC644B;
+}
+
+.add-category-form,
+.add-bookmark-form {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #2C3E50;
+}
+
+.category-form,
+.bookmark-form {
+  width: 700px;
+  margin: 100px auto;
+}
+
+.close-category-form,
+.close-bookmark-form {
+  font-size: 40px;
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  color: #ffffff;
+}
+
+.close-category-form:hover,
+.close-bookmark-form:hover {
+  color: #F03434;
+  cursor: pointer;
+}
+
+.form-group {
+  width: 100%;
+  margin: 25px auto;
+}
+
+.form-group input {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 0;
+  outline: none;
+}
+
+.form-group input[type="submit"] {
+  background-color: #F03434;
+  color: #ffffff;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #F03434;
+  cursor: pointer;
+}
+
+.form-group select {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 0;
+  outline: none;
+}
+
+.bookmarks-list {
+  margin: 25px auto;
+  text-align: center;
+}
+
+.message,
+.error,
+.error-two {
+  color: #ffffff;
+}
+
+.box {
+  width: 300px;
+  height: 500px;
+  border: 1px solid #22313F;
+  margin: 25px;
+  display: inline-block;
+  overflow: auto;
+}
+
+.box h2 {
+  padding: 25px;
+  text-align: left;
+  color: #EC644B;
+  font-weight: normal;
+}
+
+.delete-category {
+  font-size: 20px;
+  margin-left: 25px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.delete-category:hover {
+  color: #F03434;
+  cursor: pointer;
+}
+
+.bookmark {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 25px;
+  text-align: left;
+}
+
+.bookmark a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.bookmark a:hover {
+  color: #6C7A89;
+}
+
+.delete-bookmark {
+  float: right;
+  font-size: 20px;
+}
+
+.delete-bookmark:hover {
+  color: #F03434 !important;
+}
+
+@media(max-width: 750px) {
+  .category-form,
+  .bookmark-form {
+    width: 80%;
+  }
+}

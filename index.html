@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="style.css" rel="stylesheet">
+
+  <script src="script.js" defer></script>
+
+  <title>Bookmarks</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><a href="index.html">Bookmarks</a></h1>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a class="add-category-button" href="#">Add Category</a></li>
+        <li><a class="add-bookmark-button" href="#">Add Bookmark</a></li>
+      </ul>
+    </div>
+    <div class="bookmarks">
+      <div class="add-category-form">
+        <span class="close-category-form">&times;</span>
+
+        <form class="category-form">
+          <div class="form-group">
+            <p class="error"></p>
+          </div>
+          <div class="form-group">
+            <input class="category-name" type="text" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Add Category">
+          </div>
+        </form>
+      </div>
+
+      <div class="add-bookmark-form">
+        <span class="close-bookmark-form">&times;</span>
+
+        <form class="bookmark-form">
+          <div class="form-group">
+            <p class="error-two"></p>
+          </div>
+          <div class="form-group">
+            <input class="name" type="text" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <input class="url" type="text" placeholder="URL">
+          </div>
+          <div class="form-group">
+            <select class="category"></select>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Add Bookmark">
+          </div>
+        </form>
+      </div>
+
+      <div class="bookmarks-list"></div>
+    </div>
+  </div>
+</body>
+</html>
